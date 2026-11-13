@@ -1,0 +1,30 @@
+h1{
+    color:blue
+    
+
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+ 
+.pacman {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+    clip-path: polygon(50% 50%, 100% 0%, 100% 100%);
+    animation: eat 0.5s infinite alternate;
+}
+ 
+@keyframes eat {
+    0% {
+        clip-path: polygon(50% 50%, 100% 0%, 100% 100%);
+    }
+    100% {
+        clip-path: polygon(50% 50%, 100% 0%, 100% 100%, 0% 100%);
+    }
+}</body>
